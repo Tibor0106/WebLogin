@@ -1,0 +1,8 @@
+.navbar,
+.sidenav {
+    background: #ffebeb;
+}
+
+.sidenav {
+    height: auto;
+}
