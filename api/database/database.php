@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "paraghcloud";
+$dbname = "database";
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
