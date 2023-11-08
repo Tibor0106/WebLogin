@@ -1,0 +1,19 @@
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(60) NOT NULL,
+  email TEXT NOT NULL,
+  profilePicturePath TEXT NOT NULL,
+  groupId INT NOT NULL
+);
+
+CREATE TABLE groups (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  rolesId INT NOT NULL,
+  groupName VARCHAR(60) NOT NULL,
+  FOREIGN KEY (rolesId) REFERENCES roles(id)
+);
+
+CREATE TABLE roles (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  role TEXT NOT NULL
+);
